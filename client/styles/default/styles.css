@@ -17,6 +17,11 @@
   background-color: #424242;
 } */
 
+/* Navbar hover over color */
+/* nav ul li:hover, nav ul li.active {
+background-color: #ea454b;
+} */
+
 /* Radio buttons color */
 /* [type="radio"]:checked + label:after {
   border: 2px solid #ea454b;
