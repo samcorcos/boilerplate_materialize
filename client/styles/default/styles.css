@@ -27,3 +27,9 @@ background-color: #ea454b;
   border: 2px solid #ea454b;
   background-color: #ea454b;
 } */
+
+/* Easiest way to set background image to page */
+/* body {
+  background: url(/images/new_york.jpg) no-repeat center center fixed;
+  background-size: cover;
+} */
