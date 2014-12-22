@@ -97,8 +97,8 @@ background-color: #ea454b;
 
 
 /* Uncomment if using accounts-ui */
-/* .login-button {
-  background-color: \$red !important;
+.login-button {
+  background-color: #aaa !important;
   border: none !important;
 }
 #login-dropdown-list {
@@ -106,4 +106,44 @@ background-color: #ea454b;
   .login-close-text {
     text-align: center;
   }
-} */
+}
+
+
+
+
+.form-group {
+  div {
+    label {
+      display: none !important;
+    }
+  }
+}
+
+.tag {
+  color: #444 !important;
+  padding: 0.5em;
+  border: 1px solid #aaa !important;
+  border-radius: 5px;
+}
+
+[data-role="remove"] {
+  &:hover {
+    color: #ff0000 !important;
+  }
+}
+
+#meteor-blog {
+  min-height: 92vh;
+}
+
+article.post {
+  h2 {
+    a {
+      color: #888888;
+    }
+  }
+}
+
+#blog-admin {
+  min-height: 70vh;
+}
