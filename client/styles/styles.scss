@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+$font-stack: 'Open Sans', sans-serif;
+
+
 .side-nav {
   margin-right: 10%;
 }
@@ -14,7 +18,18 @@
 
 /* Navbar background color */
 /* nav {
-  background-color: #424242;
+  background-color: \$red;
+  overflow: hidden;
+  height: 64px;
+  ul {
+    li {
+      height: 64px;
+    }
+    li a {
+      font: 300 1.5em \$font-stack;
+      margin-top: 1rem;
+    }
+  }
 } */
 
 /* Navbar hover over color */
@@ -22,14 +37,73 @@
 background-color: #ea454b;
 } */
 
+
 /* Radio buttons color */
 /* [type="radio"]:checked + label:after {
   border: 2px solid #ea454b;
   background-color: #ea454b;
 } */
 
+
 /* Easiest way to set background image to page */
 /* body {
   background: url(/images/new_york.jpg) no-repeat center center fixed;
   background-size: cover;
+} */
+
+/* Better way to set background image to page
+.*-background {
+  height: 92vh;
+  width: 100%;
+  background: url(/image.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+*/
+
+
+
+.one-spacer {
+  height: 1rem;
+}
+.two-spacer {
+  height: 2rem;
+}
+.three-spacer {
+  height: 3rem;
+}
+.four-spacer {
+  height: 4rem;
+}
+.five-spacer {
+  height: 5rem;
+}
+
+.flex-white {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* Colored break line */
+/* .red-break {
+  height: 0.5rem;
+  background-color: \$red;
+} */
+
+
+/* Uncomment if using accounts-ui */
+/* .login-button {
+  background-color: \$red !important;
+  border: none !important;
+}
+#login-dropdown-list {
+  left: -100%;
+  .login-close-text {
+    text-align: center;
+  }
 } */
