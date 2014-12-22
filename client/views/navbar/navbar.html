@@ -5,7 +5,12 @@
         Project Name
       </a>
       <ul id="nav-mobile" class="right side-nav">
-        <li><a href="/about">About</a></li>
+        {{#if isAdmin}}
+        <li><a href="/admin/blog">Admin</a></li>
+        {{/if}}
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="{{pathFor 'about'}}">About</a></li>
+        {{> loginButtons}}
       </ul>
       <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
     </div>

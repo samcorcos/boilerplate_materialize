@@ -6,5 +6,25 @@ Meteor.startup(function() {
 		}
 	}
 
-	
+	Blog.config({
+		adminRole: 'blogAdmin',
+		authorRole: 'blogAuthor'
+	});
+
+	if (Meteor.users.find().count() === 0) {
+		Accounts.createUser({
+			username: "admin",
+			password: "adminpassword"
+		});
+
+		Accounts.createUser({
+			username: "author",
+			password: "authorpassword"
+		});
+		Meteor.users.update( {username: "admin"}, { $set: { "roles": ["blogAdmin", "blogAuthor"] }} );
+		Meteor.users.update( {username: "author"}, { $set: { "roles": ["blogAuthor"] }} );
+	}
+
+
+
 });
