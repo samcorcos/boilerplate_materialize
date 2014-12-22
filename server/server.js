@@ -6,5 +6,13 @@ Meteor.startup(function() {
 		}
 	}
 
-	
+	if (Meteor.users.find().count() === 0) {
+		Accounts.createUser({
+			username: "admin",
+			password: "adminpassword"
+		});
+		Meteor.users.update( {username: "admin"}, { $set: { "roles": ["admin"] }} );
+	}
+
+
 });

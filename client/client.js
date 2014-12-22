@@ -2,7 +2,7 @@ this.App = {};
 this.Helpers = {};
 
 Meteor.startup(function() {
-	
+
 });
 
 Helpers.menuItemClass = function(routeName) {
@@ -49,3 +49,11 @@ _.each(Helpers, function (helper, key) {
 	Handlebars.registerHelper(key, helper)
 });
 
+
+Accounts.ui.config({
+	requestPermissions: {
+		facebook: ['user_likes'],
+		github: ['user', 'repo']
+	},
+	passwordSignupFields: 'USERNAME_AND_OPTIONAL_EMAIL'
+});
