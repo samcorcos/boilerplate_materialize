@@ -16,7 +16,7 @@ callback-hook@1.0.2
 check@1.0.3
 chuangbo:cookie@1.1.0
 coffeescript@1.0.5
-d0minikk:materialize-meteor@1.0.3
+d0minikk:materialize-meteor@1.94.2
 ddp@1.0.13
 deps@1.0.6
 ejson@1.0.5
@@ -57,7 +57,7 @@ mobile-status-bar@1.0.2
 mongo@1.0.11
 mrt:moment@2.8.1
 mrt:underscore-string-latest@2.3.3
-natestrauser:font-awesome@4.2.0
+natestrauser:font-awesome@4.2.0_1
 npm-bcrypt@0.7.7
 observe-sequence@1.0.4
 ordered-dict@1.0.2
