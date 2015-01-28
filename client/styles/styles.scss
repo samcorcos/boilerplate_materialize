@@ -23,6 +23,7 @@ nav {
   height: 64px;
   a {
     font: 300 2em $font-stack;
+    margin-top: 0.25em;
   }
   ul {
     li {
@@ -47,13 +48,6 @@ background-color: #ea454b;
   background-color: #ea454b;
 } */
 
-
-/* Easiest way to set background image to page */
-/* body {
-  background: url(/images/new_york.jpg) no-repeat center center fixed;
-  background-size: cover;
-} */
-
 /* Better way to set background image to page
 .*-background {
   height: 92vh;
@@ -67,8 +61,6 @@ background-color: #ea454b;
 }
 
 */
-
-
 
 .one-spacer {
   height: 1rem;
