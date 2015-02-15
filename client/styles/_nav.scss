@@ -1,0 +1,32 @@
+nav {
+  background-color: #000;
+  height: 64px;
+  a {
+    font: 300 2em $font-stack;
+    margin-top: 0.25em;
+  }
+  ul {
+    li {
+      height: 64px;
+    }
+    li a {
+      font: 300 1.5em $font-stack;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.side-nav {
+  margin-right: 10%;
+}
+
+@media only screen and (min-width: 993px) {
+  .brand-logo {
+    margin-left: 10%;
+  }
+}
+
+/* Navbar hover over color */
+/* nav ul li:hover, nav ul li.active {
+background-color: #ea454b;
+} */

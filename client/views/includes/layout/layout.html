@@ -1,9 +1,7 @@
 <template name="layout">
 	<div>
 		{{> navbar}}
-		{{#transitioner}}
-			{{> yield}}
-		{{/transitioner}}
+		{{> yield}}
 	</div>
 	<div id="footer">
 		<div class="container">
@@ -13,4 +11,11 @@
 
 <head>
 	<title>Title</title>
+
+	<!-- <link rel="icon" type="image/png" href="http://example.com/myicon.png"> -->
+
+	<!-- If mobile, use this tag -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes"> -->
+
 </head>

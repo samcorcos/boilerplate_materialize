@@ -16,3 +16,4 @@ accounts-base
 accounts-password
 accounts-ui
 coffeescript
+mike:mocha

@@ -1,0 +1,31 @@
+.login-button {
+  background-color: #000 !important;
+  border: none !important;
+}
+#login-dropdown-list {
+  left: -100%;
+  .login-close-text {
+    text-align: center;
+  }
+}
+
+#login-name-link {
+  font-size: 1.5em;
+  text-decoration: none !important;
+}
+
+#signup-link {
+  color: #000;
+}
+
+#login-buttons-password, #login-buttons-do-change-password, #back-to-login-link, #login-buttons-cancel-change-password, #login-buttons-open-change-password, #login-buttons-logout {
+  &:hover {
+    background-color: #000;
+    border: 1px solid ligthen(#000, 10%);
+    color: white;
+  }
+}
+
+#login-sign-in-link {
+  text-decoration: none !important;
+}
