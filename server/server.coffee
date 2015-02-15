@@ -1,6 +1,11 @@
 Meteor.startup ->
-  # read environment variables from Meteor.settings
-  if Meteor.settings and Meteor.settings.env and _.isObject(Meteor.settings.env)
-    for variableName of Meteor.settings.env
-      process.env[variableName] = Meteor.settings.env[variableName]
-  return
+  if Meteor.users.find().count() is 0
+    Accounts.createUser
+      username: "admin"
+      password: "adminpassword"
+
+    Meteor.users.update
+      username: "admin"
+    ,
+      $set:
+        roles: ["admin"]

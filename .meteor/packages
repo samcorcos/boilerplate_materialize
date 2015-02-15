@@ -12,5 +12,7 @@ matb33:collection-hooks
 d0minikk:materialize-meteor
 sacha:spin
 particle4dev:sass
-
+accounts-base
+accounts-password
+accounts-ui
 coffeescript
