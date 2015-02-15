@@ -4,6 +4,7 @@ $font-stack: 'Open Sans', sans-serif;
 
 @import 'login';
 @import 'nav';
+@import 'footer';
 
 body, html {
   font-family: $font-stack;
@@ -19,6 +20,9 @@ h1, h2, h3, h4, p {
   box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.75);
 }
 
+.full-page {
+  min-height: 87vh;
+}
 
 /* @each \$classname in another-ny, blue-city {
   .#{\$classname}-background {
