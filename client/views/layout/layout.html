@@ -1,7 +1,9 @@
 <template name="layout">
 	<div>
 		{{> navbar}}
-		{{> yield}}
+		{{#transitioner}}
+			{{> yield}}
+		{{/transitioner}}
 	</div>
 	<div id="footer">
 		<div class="container">
