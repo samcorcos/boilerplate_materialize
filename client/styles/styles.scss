@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 $font-stack: 'Open Sans', sans-serif;
 
+$primary: black;
+
 
 @import 'login';
 @import 'nav';
@@ -21,7 +23,7 @@ h1, h2, h3, h4, p {
 }
 
 .full-page {
-  min-height: 87vh;
+  min-height: 88vh;
 }
 
 /* @each \$classname in another-ny, blue-city {

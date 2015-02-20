@@ -14,6 +14,7 @@ sacha:spin
 particle4dev:sass
 accounts-base
 accounts-password
-accounts-ui
 coffeescript
 mike:mocha
+useraccounts:core
+useraccounts:materialize

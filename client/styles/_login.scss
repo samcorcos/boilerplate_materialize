@@ -1,5 +1,5 @@
 .login-button {
-  background-color: #000 !important;
+  background-color: $primary !important;
   border: none !important;
 }
 #login-dropdown-list {
@@ -15,13 +15,13 @@
 }
 
 #signup-link {
-  color: #000;
+  color: $primary;
 }
 
 #login-buttons-password, #login-buttons-do-change-password, #back-to-login-link, #login-buttons-cancel-change-password, #login-buttons-open-change-password, #login-buttons-logout {
   &:hover {
-    background-color: #000;
-    border: 1px solid ligthen(#000, 10%);
+    background-color: $primary;
+    border: 1px solid ligthen($primary, 10%);
     color: white;
   }
 }

@@ -6,9 +6,18 @@
       </a>
       <ul id="nav-mobile" class="right side-nav">
         <li><a href="{{pathFor 'about'}}">About</a></li>
-        <li>{{> loginButtons}}</li>
+        {{#if currentUser}}
+          <li><a href="#" id="logout-button">Logout</a></li>
+        {{else}}
+          <li><a href="#" class="dropdown-button" data-beloworigin="true" data-activates="signinDropdown">Sign in</a></li>
+        {{/if}}
       </ul>
       <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
     </div>
   </nav>
+
+  <div id="signinDropdown" class="dropdown-content signin-dropdown">
+    {{> atForm}}
+  </div>
+
 </template>

@@ -1,5 +1,5 @@
 nav {
-  background-color: #000;
+  background-color: $primary;
   height: 64px;
   a {
     font: 300 2em $font-stack;
@@ -8,6 +8,9 @@ nav {
   ul {
     li {
       height: 64px;
+      &:hover {
+        background-color: lighten($primary, 20%)
+      }
     }
     li a {
       font: 300 1.5em $font-stack;
@@ -24,6 +27,22 @@ nav {
   .brand-logo {
     margin-left: 10%;
   }
+}
+
+.signin-dropdown {
+  padding: 1rem;
+  height: auto !important;
+}
+
+.at-btn {
+  background-color: $primary;
+  &:hover {
+    background-color: lighten($primary, 20%);
+  }
+}
+
+.at-title {
+  text-align: center;
 }
 
 /* Navbar hover over color */
