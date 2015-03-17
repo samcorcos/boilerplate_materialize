@@ -9,7 +9,6 @@ spiderable
 iron:router
 natestrauser:font-awesome
 matb33:collection-hooks
-d0minikk:materialize-meteor
 sacha:spin
 particle4dev:sass
 accounts-base
@@ -18,3 +17,4 @@ coffeescript
 mike:mocha
 useraccounts:core
 useraccounts:materialize
+materialize:materialize
