@@ -23,9 +23,20 @@ nav {
   margin-right: 10%;
 }
 
-@media only screen and (min-width: 993px) {
-  .brand-logo {
-    margin-left: 10%;
+.brand-logo {
+  @media screen and (min-width: $break-mobile) {
+    img {
+      height: 50px;
+      margin-left: 35%;
+    }
+  }
+  @media screen and (max-width: $break-mobile) {
+    img {
+      height: 40px;
+      display: block;
+      margin: auto;
+      margin-top: 8px;
+    }
   }
 }
 

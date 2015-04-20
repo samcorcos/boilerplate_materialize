@@ -3,6 +3,8 @@ $font-stack: 'Open Sans', sans-serif;
 
 $primary: black;
 
+$break-mobile: 993px;
+$break-phone: 600px;
 
 @import 'login';
 @import 'nav';
