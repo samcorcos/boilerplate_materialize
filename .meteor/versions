@@ -36,7 +36,7 @@ less@1.0.14
 livedata@1.0.13
 localstorage@1.0.3
 logging@1.0.7
-matb33:collection-hooks@0.7.11
+matb33:collection-hooks@0.7.13
 meteor@1.1.6
 meteor-platform@1.2.2
 mike:mocha@0.5.3
@@ -79,7 +79,7 @@ url@1.0.4
 useraccounts:core@1.9.1
 useraccounts:materialize@1.9.1
 velocity:chokidar@0.12.6_1
-velocity:core@0.6.0
+velocity:core@0.6.1
 velocity:html-reporter@0.5.3
 velocity:meteor-internals@1.1.0_7
 velocity:shim@0.1.0
