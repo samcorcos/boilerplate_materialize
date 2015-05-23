@@ -25,33 +25,9 @@ nav {
 
 .brand-logo {
   @media screen and (min-width: $break-mobile) {
-    img {
-      height: 50px;
-      margin-left: 35%;
-    }
+
   }
   @media screen and (max-width: $break-mobile) {
-    img {
-      height: 40px;
-      display: block;
-      margin: auto;
-      margin-top: 8px;
-    }
+
   }
-}
-
-.signin-dropdown {
-  padding: 1rem;
-  height: auto !important;
-}
-
-.at-btn {
-  background-color: $primary;
-  &:hover {
-    background-color: lighten($primary, 20%);
-  }
-}
-
-.at-title {
-  text-align: center;
 }

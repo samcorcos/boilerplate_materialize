@@ -1,0 +1,44 @@
+<template name="login">
+  <section class="rust-paint-background full-page">
+    <div class="container">
+      <div class="row valign-wrapper" style="height:88vh;">
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-content">
+              {{#if currentUser}}
+                <h5>Logged in as {{userEmail}}</h5>
+                <p><a class="btn waves-effect waves-light" id="logout">Log Out</a></p>
+              {{else}}
+                <h3>Login</h3>
+                {{#if loggingIn}}
+                  <p>Logging in...</p>
+                {{else}}
+                  {{#if creatingAccount}}
+                    {{> _newAccountForm}}
+                  {{else}}
+                    {{> _loginForm}}
+                  {{/if}}
+                {{/if}}
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<template name="_newAccountForm">
+  <input type="text" id="email" placeholder="Email">
+  <input type="text" id="name" placeholder="Name">
+  <input type="password" id="password" placeholder="Password">
+  <a href="" class="btn waves-effect waves-light" id="createAccount">Create Account</a>
+  <a href="" class="btn waves-effect waves-light" id="loginForm">Login</a>
+</template>
+
+<template name="_loginForm">
+  <input type="text" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <a href="" class="btn waves-effect waves-light" id="login">Log In</a>
+  <a href="" class="btn waves-effect waves-light" id="accountForm">Create Account</a>
+</template>

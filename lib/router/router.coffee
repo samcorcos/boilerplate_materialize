@@ -10,4 +10,7 @@ Router.map ->
   @route "about",
     path: "/about"
 
+  @route "login",
+    path: "/login"
+
   return
